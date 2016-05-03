@@ -1,0 +1,27 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate project for ReactJS based applications",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albert-cyberhulk/React-Boilerplate.git"
+  },
+  "keywords": [
+    "ReactJs",
+    "Albert",
+    "Cyberhulk",
+    "Grunt",
+    "Bower",
+    "Babbel",
+    "JSX"
+  ],
+  "author": "Albert Cyberhulk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albert-cyberhulk/React-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/albert-cyberhulk/React-Boilerplate#readme"
+}
