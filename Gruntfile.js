@@ -13,6 +13,10 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
+/**
+ * @module Grunt
+ * keeps auto load and cofiguration for grunt tasks
+ */
 module.exports = function (grunt) {
-
+  
 };
