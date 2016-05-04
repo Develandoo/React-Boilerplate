@@ -25,15 +25,16 @@ module.exports = function (grunt) {
   //compile config from separate files
   var config = require('load-grunt-configs')(grunt, {
     config: {
-      src: 'grunt/tasks/*.js'
+      src: 'tasks/*.js'
     }
   });
   // Define the configuration for all the tasks
   grunt.initConfig(config);
 
-  grunt.registerTask('serve', function (target) {
-    console.log('server running');
-  });
+  grunt.registerTask('serve', [
+    'connect:livereload',
+    'watch'
+  ]);
 
 };
 
