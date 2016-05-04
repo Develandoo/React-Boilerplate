@@ -31,3 +31,9 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+#development server processed files
+dev
+
+#distribution ready processed files
+dist

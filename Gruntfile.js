@@ -18,5 +18,25 @@
  * keeps auto load and cofiguration for grunt tasks
  */
 module.exports = function (grunt) {
-  
+  // Load grunt tasks automatically
+  require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', 'gruntify-*']});
+  // Time how long tasks take. Can help when optimizing build times
+  require('time-grunt')(grunt);
+  //compile config from separate files
+  var config = require('load-grunt-configs')(grunt, {
+    config: {
+      src: 'grunt/tasks/*.js'
+    }
+  });
+  // Define the configuration for all the tasks
+  grunt.initConfig(config);
+
+  grunt.registerTask('serve', function (target) {
+    console.log('server running');
+  });
+
 };
+
+/**
+ *
+ */
