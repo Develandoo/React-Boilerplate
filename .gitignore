@@ -37,3 +37,6 @@ dev
 
 #distribution ready processed files
 dist
+
+#temporary processed files
+temp
