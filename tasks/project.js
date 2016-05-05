@@ -6,8 +6,9 @@
 
 module.exports = {
   // configurable paths
-  src:  'src',
+  src: 'src',
   dist: 'dist',
   dev: 'dev',
-  test: 'test'
+  test: 'test',
+  temp: 'temp'
 };

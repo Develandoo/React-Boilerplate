@@ -7,12 +7,6 @@
  * @date 03.05.2016
  */
 
-// # Globbing
-// for performance reasons we're only matching one level down:
-// 'test/spec/{,*/}*.js'
-// use this if you want to recursively match all subfolders:
-// 'test/spec/**/*.js'
-
 /**
  * @module Grunt
  * keeps auto load and cofiguration for grunt tasks
@@ -32,12 +26,10 @@ module.exports = function (grunt) {
   grunt.initConfig(config);
 
   grunt.registerTask('serve', [
+    'copy:temp',
+    'copy:dev',
     'connect:livereload',
     'watch'
   ]);
 
 };
-
-/**
- *
- */
