@@ -33,10 +33,10 @@ node_modules
 .node_repl_history
 
 #development server processed files
-dev
+.dev
 
 #distribution ready processed files
 dist
 
 #temporary processed files
-temp
+.temp

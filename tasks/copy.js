@@ -11,6 +11,7 @@
 // 'test/spec/**/*.js'
 
 // Copies files to places other tasks can use
+// For dist copy package json
 module.exports = {
   temp: {
     files: [
