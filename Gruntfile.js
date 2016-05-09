@@ -26,8 +26,9 @@ module.exports = function (grunt) {
   grunt.initConfig(config);
 
   grunt.registerTask('serve', [
+    'babel:dev',
     'copy:temp',
-    //'copy:dev',
+    'copy:dev',
     'connect:livereload',
     'watch'
   ]);

@@ -23,7 +23,7 @@ module.exports = {
           '**/images/*',
           '.htaccess',
           '**/fonts/*',
-          '**/views/**/*.{html}',
+          '**/*.html',
           'index.html'
         ]
       }
@@ -40,7 +40,8 @@ module.exports = {
           '**/images/*',
           '.htaccess',
           '**/fonts/*',
-          '**/views/**/*.{html}',
+          '**/*.html',
+          '**/*.js',
           'index.html'
         ]
       }
