@@ -25,10 +25,17 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig(config);
 
+  // Process of dev files to group
+  grunt.registerTask('process:dev', [
+    'newer:browserify:dev',
+    'newer:copy:temp',
+    'newer:copy:dev',
+    'notify:processDev'
+  ]);
+
+  // Register serve task
   grunt.registerTask('serve', [
-    'browserify:dev',
-    'copy:temp',
-    'copy:dev',
+    'process:dev',
     'connect:livereload',
     'watch'
   ]);
