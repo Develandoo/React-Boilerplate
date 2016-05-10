@@ -5,4 +5,14 @@ module.exports = {
     files: ['<%= project.src %>/**/*.js'],
     tasks: ['process:dev']
   },
+  sass: {
+    options: { livereload: true },
+    files: ['<%= project.src %>/**/*.scss'],
+    tasks: ['process:dev']
+  },
+  html: {
+    options: { livereload: true },
+    files: ['<%= project.src %>/index.html'],
+    tasks: ['process:dev']
+  }
 };

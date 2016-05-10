@@ -43,6 +43,7 @@ module.exports = {
           '**/fonts/*',
           '**/*.html',
           '**/*.js',
+          '**/*.css',
           'index.html'
         ]
       }
