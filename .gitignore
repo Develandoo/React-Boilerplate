@@ -40,3 +40,6 @@ dist
 
 #temporary processed files
 .temp
+
+#removing sass caches
+.sass-cache
